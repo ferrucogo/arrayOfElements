@@ -1,0 +1,22 @@
+{
+    "name": "Andrea",
+    "surname": "Asioli",
+    "class": {
+        "name": "Programmatore Front-End",
+        "students": [
+            {
+                "name": "Simone",
+                "surname": "Aloia",
+                "yob": 1997,
+                "married": false
+            },
+            {
+                "name": "Pippo",
+                "surname": "Capogreco",
+                "yob": 2002,
+                "married": false,
+                "titoloDiStudio": "Diploma di maturità"
+            }
+        ]
+    }
+}
