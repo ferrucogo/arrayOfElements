@@ -46,3 +46,49 @@ console.log(thirdArray, subArray);
 //Rimuovere parte di un array, se specificato nei parametri terzi, quarti e quinti, è possibile inserire ulteriori valori al posto di quelli rimossi
 let subArray2 = thirdArray.splice(2, 3, 12, 13, 14);
 console.log(thirdArray);
+
+let numeroPiuGrande = Math.max(5, 10, 2);
+console.log(numeroPiuGrande);
+let numeroPiuGrandeArray = Math.max (...thirdArray);
+console.log("Numero più grande dell'array: ", numeroPiuGrandeArray);
+
+function stringPiuLunga (...stringhe){
+    let str = "";
+    for (let i = 0; i < stringhe.length; i++){
+        const element = stringhe[i];
+        if(str.length < element.length){
+            str = element;
+        }
+    }
+    return str;
+}
+console.log(stringPiuLunga("Pippo", "Topolino", "Pluto"));
+
+function max (...numbers){
+    let n = numbers[0];
+    for (let i = 0; i< numbers.length; i++) {
+        const element = numbers [i];
+        if (n < element){
+            n = element;
+        }
+    }
+    return n;
+}
+
+console.log("Il numero più grande all'interno dell'array è " + max(100, 12, 3, 1001));
+
+//Min
+function min (...numbers){
+    let nn = numbers[0];
+    for (let j = 0; j< numbers.length; j++) {
+        const eelement = numbers [j];
+        if (nn > eelement){
+            nn = eelement;
+        }
+    }
+    return nn;
+}
+
+console.log("Il numero più piccolo all'interno dell'array è " + min(100, -99, 3, 1001));
+
+
