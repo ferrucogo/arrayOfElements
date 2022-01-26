@@ -95,3 +95,29 @@ console.log("Il risultato della somma con la funzione range è " + sumArray(...r
 console.log("Il risultato della somma senza la funzione range è " + sumArray(...[0, 1, 2, 3, 4, 5]));
 // console.log(sumArray(rangeNumber(5)));
 
+let array5 = [7, 4, 100, 12];
+
+function doubleFirstElement(array){
+    /* let tempArray = [];
+    
+    for (let i = 0; i < array.length; i++) {
+       tempArray.push(array[i]);
+    } */
+
+    let tempArray = [...array];
+
+    tempArray[0] = tempArray[0] * 2;
+    return tempArray; 
+}
+
+let newArray5 = doubleFirstElement(array5); // Il valore del primo elemento dell'array (indice 0) è stato raddoppiato
+
+console.log(array5);
+console.log(newArray5);
+
+let finalArray = [23, 13, 5, 12];
+
+function sumFirst4ElementsOfArray ([el0, el1, el2, el3]){
+    return el0 + el1 + el2 + el3;
+}
+
